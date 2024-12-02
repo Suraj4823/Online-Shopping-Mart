@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cinema Ticket Booking</title>
+<link rel="stylesheet" href="css/cinema.css">
+</head>
+<body>
+<div class="container">
+ <h2>Cinema Ticket Booking</h2>
+  <form action="cinema.php" method="post">
+
+    <label for="movie"><b>Select Movie:</b></label>
+    <select id="movie" name="movie">
+      <option value="0">Select Movie</option>
+      <option value="Fighter">Fighter</option>
+      <option value="Chh.Sambhaji">Chh.Sambhaji</option>
+      <option value="Soldier">Soldier</option>
+    </select>
+
+
+    <label for="date"><b>Select Date:</b></label>
+    <input type="date" id="date" name="date">
+
+    <label for="tickets"><b>Number of Tickets:</b></label>
+    <input type="number" id="tickets" name="tickets" min="0" value="0">
+    
+    <input type="submit" value="Book Tickets">
+  </form>
+</div> 
+
+</body>
+</html>
